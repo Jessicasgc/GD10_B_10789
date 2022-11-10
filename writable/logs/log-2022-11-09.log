@@ -1,0 +1,90 @@
+CRITICAL - 2022-11-09 07:54:32 --> Class "Model\Modelmahasiswa" not found
+in APPPATH\Controllers\Mahasiswa.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Mahasiswa->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 08:04:34 --> Class "Model\Modelmahasiswa" not found
+in APPPATH\Controllers\Mahasiswa.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Mahasiswa->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 08:48:45 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Mahasiswa.php on line 13.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Mahasiswa.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Mahasiswa')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Mahasiswa')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Mahasiswa', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 08:51:18 --> Class "ResourceController" not found
+in APPPATH\Controllers\Mahasiswa.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Mahasiswa.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Mahasiswa')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Mahasiswa')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Mahasiswa', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 10:28:32 --> fwrite(): Write of 76 bytes failed with errno=22 Invalid argument
+in SYSTEMPATH\CLI\CLI.php on line 1013.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'fwrite(): Write of 76 bytes failed with errno=22 Invalid argument', 'SYSTEMPATH\\CLI\\CLI.php', 1013)
+ 2 SYSTEMPATH\CLI\CLI.php(1013): fwrite(resource (stream), '[0;32mCodeIgniter development server started on http://localhost:8081[0m
+')
+ 3 SYSTEMPATH\CLI\CLI.php(364): CodeIgniter\CLI\CLI::fwrite(resource (stream), '[0;32mCodeIgniter development server started on http://localhost:8081[0m
+')
+ 4 SYSTEMPATH\Commands\Server\Serve.php(97): CodeIgniter\CLI\CLI::write('[0;32mCodeIgniter development server started on http://localhost:8081[0m', 'green')
+ 5 SYSTEMPATH\Commands\Server\Serve.php(114): CodeIgniter\Commands\Server\Serve->run([])
+ 6 SYSTEMPATH\CLI\Commands.php(63): CodeIgniter\Commands\Server\Serve->run([])
+ 7 SYSTEMPATH\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('serve', [])
+ 8 SYSTEMPATH\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index([])
+ 9 SYSTEMPATH\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', [...])
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+11 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+13 ROOTPATH\spark(98): CodeIgniter\CLI\Console->run()
+CRITICAL - 2022-11-09 10:28:32 --> Uncaught ErrorException: fwrite(): Write of 2 bytes failed with errno=22 Invalid argument in E:\xampp\htdocs\ci4-apiserver\vendor\codeigniter4\framework\system\CLI\CLI.php:1013
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'fwrite(): Write...', 'E:\\xampp\\htdocs...', 1013)
+#1 E:\xampp\htdocs\ci4-apiserver\vendor\codeigniter4\framework\system\CLI\CLI.php(1013): fwrite(Resource id #2, '\r\n')
+#2 E:\xampp\htdocs\ci4-apiserver\vendor\codeigniter4\framework\system\CLI\CLI.php(364): CodeIgniter\CLI\CLI::fwrite(Resource id #2, '\r\n')
+#3 E:\xampp\htdocs\ci4-apiserver\vendor\codeigniter4\framework\system\CLI\CLI.php(441): CodeIgniter\CLI\CLI::write()
+#4 E:\xampp\htdocs\ci4-apiserver\app\Views\errors\cli\error_exception.php(6): CodeIgniter\CLI\CLI::newLine()
+#5 E:\xampp\htdocs\ci4-apiserver\vendor\codeigniter4\framework\system\Debug\Exceptions.php(284): include('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\ci4-apiserver\vendor\codeigniter4\framework\system\Debug\Exceptions.php(287): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#7 E:\xampp\htdocs\ci4-apiserver\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#8 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#9 {main}
+  thrown
+in SYSTEMPATH\CLI\CLI.php on line 1013.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-09 19:26:47 --> Class "ResourceController" not found
+in APPPATH\Controllers\Mahasiswa.php on line 5.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Mahasiswa.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Mahasiswa')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Mahasiswa')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Mahasiswa', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 19:27:31 --> Class "ResourceController" not found
+in APPPATH\Controllers\Mahasiswa.php on line 4.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Mahasiswa.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Mahasiswa')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Mahasiswa')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Mahasiswa', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 20:03:36 --> Undefined variable $cari
+in APPPATH\Controllers\Mahasiswa.php on line 37.
+ 1 APPPATH\Controllers\Mahasiswa.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cari', 'APPPATH\\Controllers\\Mahasiswa.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Mahasiswa->show('3289')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
